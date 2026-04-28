@@ -4,8 +4,11 @@
     <File Path=".gitignore" />
     <File Path=".gitattributes" />
   </Folder>
-  <Folder Name="/src/">
+  <Folder Name="/source/">
     <File Path="files.txt" />
+  </Folder>
+  <Folder Name="/source/src/">
+    <File Path="Lists.dno" />
   </Folder>
 </Solution>
   
