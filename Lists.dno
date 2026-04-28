@@ -1,3 +1,19 @@
 #func newlist();
-    return(:0,:);
+    return();
 #endfunc;
+
+#func addtolist(list, item);
+    new = +(list, item, COLON);
+    return(new);
+#endfunc;
+
+#func getlistitem(list, index);
+    item = ::;
+    return();
+#endfunc;
+
+#func clearlist(list);
+    return();
+#endfunc;
+
+getlistitem(0, 0);
