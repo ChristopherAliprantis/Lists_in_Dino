@@ -7,7 +7,6 @@
   <Folder Name="/src/">
     <File Path="files.txt" />
     <File Path="Lists.dno" />
-    <File Path="test.dno" />
   </Folder>
 </Solution>
   
