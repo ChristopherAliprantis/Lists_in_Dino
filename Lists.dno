@@ -12,7 +12,8 @@
     ii = 0;
     i = 0;
     #loop (len(list));
-        thing = ==(ii, index);
+        nii = +(ii, 1);
+        thing = ==(nii, index);
         thing2 = ==(charat(i), :,:);
         #if (and(thing, thing2)); ii = +(ii, 1);break; #endif;
         item = +(item, charat(i))
