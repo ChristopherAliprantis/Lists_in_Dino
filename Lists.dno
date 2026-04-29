@@ -18,7 +18,6 @@
         item = +(item, charat(i))
         i = +(i, 1);
         #if (thing2); ii = +(ii, 1); #endif;
-        
     #endloop;
     return(item);
 #endfunc;
