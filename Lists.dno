@@ -9,10 +9,21 @@
 
 #func getlistitem(list, index);
     item = ::;
-    return();
+    ii = 0;
+    i = 0;
+    #loop (len(list));
+        thing = ==(ii, index);
+        thing2 = ==(charat(i), :,:);
+        #if (and(thing, thing2)); ii = +(ii, 1);break; #endif;
+        item = +(item, charat(i))
+        i = +(i, 1);
+        #if (thing2); ii = +(ii, 1); #endif;
+        
+    #endloop;
+    return(item);
 #endfunc;
 
-#func clearlist(list);
+#func clearlist();
     return();
 #endfunc;
 
