@@ -3,7 +3,7 @@
 #endfunc;
 
 #func addtolist(list, item);
-    new = +(list, item, COLON);
+    new = +(list, item, :,:);
     return(new);
 #endfunc;
 
