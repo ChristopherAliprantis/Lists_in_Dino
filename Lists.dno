@@ -26,5 +26,3 @@
 #func clearlist();
     return();
 #endfunc;
-
-getlistitem(0, 0);
