@@ -18,7 +18,7 @@
         #if (and(thing, thing2)); ii = +(ii, 1);break; #endif;
         item = +(item, charat(i));
         i = +(i, 1);
-        #if (thing2); ii = +(ii, 1); #endif;
+        #if (thing2); ii = +(ii, 1); item = ::; #endif;
     #endloop;
     return(item);
 #endfunc;
