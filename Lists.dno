@@ -16,7 +16,7 @@
         thing = ==(nii, index);
         thing2 = ==(charat(i), :,:);
         #if (and(thing, thing2)); ii = +(ii, 1);break; #endif;
-        item = +(item, charat(i))
+        item = +(item, charat(i));
         i = +(i, 1);
         #if (thing2); ii = +(ii, 1); #endif;
     #endloop;
