@@ -8,10 +8,11 @@
 #endfunc;
 
 #func getlistitem(list, index);
+    l = Slen(list);
     item = ::;
     ii = 0;
     i = 0;
-    #loop (len(list));
+    #loop (l);
         nii = +(ii, 1);
         thing = ==(nii, index);
         thing2 = ==(charat(list, i), :,:);
