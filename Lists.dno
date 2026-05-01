@@ -9,22 +9,14 @@ COMMA = :,:;
 #endfunc;
 
 #func getlistitem(list, index);
-    l = Slen(list);
-    item = ::;
-    ii = 0;
-    i = 0;
-    #loop (l);
-        nii = +(ii, 1);
-        char = charat(list, i);
-        thing = ==(nii, index);
-        thing2 = ==(char, COMMA);
-        #if (and(thing, thing2)); ii = +(ii, 1);break;#endif;
-        item = +(item, char);
-        i = +(i, 1);
-        #if (thing2); ii = +(ii, 1); item = ::; #endif;
-    #endloop;
-    return(item);
+    return(::);
 #endfunc;
+
+
+
+
+
+
 
 #func clearlist();
     return();
