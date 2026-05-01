@@ -1,4 +1,5 @@
 COMMA = :,:;
+BLANK = ::;
 #func newlist();
     return();
 #endfunc;
@@ -9,14 +10,20 @@ COMMA = :,:;
 #endfunc;
 
 #func getlistitem(list, index);
-    return(::);
+    i = 0;
+    Ii = 0;
+    item = BLANK;
+    #loop (Slen(list));
+        char = charat(list, i);
+        iscomma = ==(char, COMMA);
+        #if (iscomma); Ii = +(Ii, 1); #endif;
+        #if (==(Ii, index)); item = +(item, char); break;#endif;
+        #if (iscomma); item = BLANK; #endif;
+        #if (!(iscomma)); item = +(item, char); #endif;
+        i = +(i, 1);
+    #endloop;
+    return(item);
 #endfunc;
-
-
-
-
-
-
 
 #func clearlist();
     return();
